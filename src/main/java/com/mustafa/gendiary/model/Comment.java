@@ -33,6 +33,9 @@ public class Comment {
     @Column(name = "last_modified_date")
     private Timestamp dateLastModified;
 
+    @Column(name = "comment_content",columnDefinition = "TEXT")
+    private String commentContent;
+
     @Column(name = "like_count")
     private Long countOfLike;
 
